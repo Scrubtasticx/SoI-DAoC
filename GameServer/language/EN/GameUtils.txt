@@ -1,0 +1,9 @@
+﻿# Startup guilds
+Guild.StartupGuild.Hibernia:		Hibernia Newbie Guild
+Guild.StartupGuild.Albion:		Albion Newbie Guild
+Guild.StartupGuild.Midgard:		Midgard Newbie Guild
+
+Guild.StartupGuild.Motd: 			Use /gu <text> to talk in this starter guild.
+Guild.StartupGuild.Omotd:			Type /gc quit to leave this starter guild.
+Guild.StartupGuild.Title:			Initiate
+
