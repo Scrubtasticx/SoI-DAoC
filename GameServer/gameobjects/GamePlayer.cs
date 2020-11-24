@@ -10133,13 +10133,13 @@ break;
 
                                         if (requiredLevel <= Level)
                                         {
-                                            if (spell.CastTime > 0 && AttackState)
-                                            {
-                                                Out.SendMessage(LanguageMgr.GetTranslation(Client.Account.Language, "GamePlayer.UseSlot.CantUseInCombat"), eChatType.CT_System, eChatLoc.CL_SystemWindow);
-                                            }
+											if (spell.CastTime > 0 && AttackState)
+											{
+												Out.SendMessage(LanguageMgr.GetTranslation(Client.Account.Language, "GamePlayer.UseSlot.CantUseInCombat"), eChatType.CT_System, eChatLoc.CL_SystemWindow);
+											}
 
                                             // Eden
-                                            else if ((IsStunned && !(Steed != null && Steed.Name == "Forceful Zephyr")) || IsMezzed || !IsAlive)
+                                            if ((IsStunned && !(Steed != null && Steed.Name == "Forceful Zephyr")) || IsMezzed || !IsAlive)
                                             {
                                                 Out.SendMessage(LanguageMgr.GetTranslation(Client.Account.Language, "GamePlayer.UseSlot.CantUseState", useItem.GetName(0, false)), eChatType.CT_System, eChatLoc.CL_SystemWindow);
                                             }
@@ -10654,12 +10654,12 @@ break;
                 return false;
             }
 
-            if (InCombat)
+/*            if (InCombat)
             {
                 Out.SendMessage(LanguageMgr.GetTranslation(Client.Account.Language, "GamePlayer.ApplyPoison.CantApplyRecentCombat"), eChatType.CT_System, eChatLoc.CL_SystemWindow);
                 return false;
             }
-
+*/
             if (toItem.PoisonSpellID != 0)
             {
                 bool canApply = false;
