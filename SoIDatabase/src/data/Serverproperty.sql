@@ -12,7 +12,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Dumping structure for table soidaoc.serverproperty
-DROP TABLE IF EXISTS `serverproperty`;
 CREATE TABLE IF NOT EXISTS `serverproperty` (
   `Category` text NOT NULL,
   `Key` varchar(255) NOT NULL,
@@ -32,7 +31,7 @@ INSERT INTO `serverproperty` (`Category`, `Key`, `Description`, `DefaultValue`, 
 	('pve', 'adventurewing_time_to_destroy', 'Set the time before Instanced Adventure Wings (Catacombs) are destroy when empty (in minutes).', '5', '5', '2020-11-21 19:51:33', 'ab0bcd06-4b29-4b23-a17b-1870433da461'),
 	('guild', 'alliance_max', 'Max Guilds In Alliance - Edit this to change the maximum number of guilds in an alliance -1 = unlimited, 0=disable alliances', '-1', '-1', '2020-11-21 19:51:34', '1c6ba4e9-85a0-4361-b5b1-966af7653e34'),
 	('system', 'allow_all_realms', 'should we allow characters to be created on all realms using a single account', 'False', 'True', '2020-11-21 19:51:27', 'aba57f1f-d343-4817-ae63-3479e84181e0'),
-	('pvp', 'allow_all_realms_df', 'Should we allow all realms access to DF', 'False', 'True', '2020-11-21 19:51:31', '83a2e455-2e7e-4f27-9be1-fa4876307af0'),
+	('pvp', 'allow_all_realms_df', 'Should we allow all realms access to DF', 'False', 'False', '2020-11-21 19:51:31', '83a2e455-2e7e-4f27-9be1-fa4876307af0'),
 	('account', 'allow_auto_account_creation', 'Allow auto-account creation  This is also set in serverconfig.xml and must be enabled for this property to work.', 'True', 'True', '2020-11-21 19:51:34', '82f8cef4-b0a6-428a-ae8f-ad0cbe2c759e'),
 	('pvp', 'allow_bps_in_bgs', 'Allow bounty points to be gained in battlegrounds', 'False', 'True', '2020-11-21 19:51:31', '0e26a6e3-a7b8-49bd-b614-07fd9b954bef'),
 	('classes', 'allow_cata_slash_level', 'Allow catacombs classes to use /level command', 'False', 'False', '2020-11-21 19:51:33', '92c9f345-927a-4c76-bc6e-3cc902053544'),
@@ -235,7 +234,7 @@ INSERT INTO `serverproperty` (`Category`, `Key`, `Description`, `DefaultValue`, 
 	('npc', 'mob_damage_increase_perlevel', 'How much damage to increase per level', '0', '0', '2020-11-21 19:51:30', '9f7a67c3-5b13-4993-ba0f-d2587e38040f'),
 	('npc', 'mob_damage_increase_startlevel', 'What level to start increasing mob damage.', '30', '30', '2020-11-21 19:51:30', 'abb8f854-b856-48ea-ad60-a44ac01b9a69'),
 	('rates', 'money_drop', 'Money Drop Modifier - Edit this to change the amount of money which is dropped e.g 1.5 is 50% more 2.0 is twice the amount (100%) 0.5 is half the amount (50%)', '1', '1', '2020-11-21 19:51:30', '70e03f28-578e-4541-86b7-9c385e36afe7'),
-	('server', 'motd', 'The Server Message of the Day - Edit this to set what is displayed when a level 2+ character enters the game for the first time, set to "" for nothing', 'Welcome to Shadows of Iniquity! Gear is sold in BGs, /train works anywhere, and DF drops BPs and orbs that can be turned into any trainer for xp!', '', '2020-11-21 19:51:28', '493cd6ad-59c3-4629-a6e6-c6a0f8ac821b'),
+	('server', 'motd', 'The Server Message of the Day - Edit this to set what is displayed when a level 2+ character enters the game for the first time, set to "" for nothing', 'Welcome to a Dawn of Light server, please edit this MOTD', '', '2020-11-21 19:51:28', '493cd6ad-59c3-4629-a6e6-c6a0f8ac821b'),
 	('rates', 'mount_over_level_35_speed', 'What is the speed of player controlled mounts over level 35?', '145', '145', '2020-11-21 19:51:30', '9704d7f2-efbc-4127-862a-38d6bd08e838'),
 	('rates', 'mount_under_level_35_speed', 'What is the speed of player controlled mounts under level 35?', '135', '135', '2020-11-21 19:51:30', '21da06ff-d75a-476b-a159-743b66202bb5'),
 	('guild', 'new_guild_dues', 'Guild dues can be set from 1-100% if enabled, or standard 2% if not', 'False', 'True', '2020-11-21 19:51:34', '76f578ff-6917-4bfa-bd4a-d326c33390ff'),
@@ -362,7 +361,7 @@ INSERT INTO `serverproperty` (`Category`, `Key`, `Description`, `DefaultValue`, 
 	('rates', 'XP_Group_Cap_Percent', 'Maximum XP a player can earn while in a group, given in percent of their level. Default is 125%', '125', '125', '2020-11-21 19:51:29', 'cf8ddd89-88b2-4016-a334-34d6b7fcb639'),
 	('rates', 'XP_HardCap_Percent', 'Hardcap XP a player can earn after all other adjustments are applied. Given in percent of their level. Default is 500%', '500', '500', '2020-11-21 19:51:29', '9c3991b5-25c9-4ce8-8f8a-f74c3ad41221'),
 	('rates', 'XP_PVP_Cap_Percent', 'Maximum XP a player can earn killing another player, given in percent of their level. Default is 125%', '125', '125', '2020-11-21 19:51:29', 'dd5ab3c0-8c44-488b-bc26-5b988a79c97d'),
-	('rates', 'xp_rate', 'The Experience Points Rate Modifier - Edit this to change the rate at which you gain experience points e.g 1.5 is 50% more 2.0 is twice the amount (100%) 0.5 is half the amount (50%)', '1', '2', '2020-11-21 19:51:29', '7f4c2534-71e8-46c4-9379-a38328350adb'),
+	('rates', 'xp_rate', 'The Experience Points Rate Modifier - Edit this to change the rate at which you gain experience points e.g 1.5 is 50% more 2.0 is twice the amount (100%) 0.5 is half the amount (50%)', '1', '1.75', '2020-11-21 19:51:29', '7f4c2534-71e8-46c4-9379-a38328350adb'),
 	('world', 'zonepoint_npctemplate', 'Display the zonepoint with the following npctemplate. 0 for no display', '0', '0', '2020-11-21 19:51:29', '66a46fc8-d758-4726-97db-6ef177847bd3');
 /*!40000 ALTER TABLE `serverproperty` ENABLE KEYS */;
 
