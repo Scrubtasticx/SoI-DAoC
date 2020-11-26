@@ -710,7 +710,7 @@ namespace DOL.GS.Keeps
                 return false;
             }
 
-            if (DBKeep.BaseLevel != 50)
+            if (DBKeep.BaseLevel < 39)
             {
                 player.Out.SendMessage("This keep is not able to be claimed.", eChatType.CT_System, eChatLoc.CL_SystemWindow);
                 return false;
