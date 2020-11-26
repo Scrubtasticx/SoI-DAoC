@@ -284,7 +284,7 @@ namespace DOL.GS.Scripts
 						if (t.Level < 5)
 						{
                         // Tell them oops
-                        Say("You must be level 5 before you can join Battlegrounds.");
+                        SayTo(t, "You must be level 5 before you can join Battlegrounds.");
                         }
 												
 						if (t.Realm == eRealm.Albion && t.Level > 4 && t.Level < 40)
@@ -580,7 +580,7 @@ namespace DOL.GS.Scripts
 						if (t.Level < 5)
 						{
                         // Tell them oops
-                        Say("You must be level 5 before you can join Battlegrounds.");
+                        SayTo(t, "You must be level 5 before you can join Battlegrounds.");
                         }
 												
 						if (t.Realm == eRealm.Albion && t.Level > 4 && t.Level < 40)
@@ -869,7 +869,7 @@ namespace DOL.GS.Scripts
 						if (t.Level < 5)
 						{
                         // Tell them oops
-                        Say("You must be level 5 before you can join Battlegrounds.");
+                        SayTo(t, "You must be level 5 before you can join Battlegrounds.");
                         }
 												
 						if (t.Realm == eRealm.Albion && t.Level > 4 && t.Level < 40)
