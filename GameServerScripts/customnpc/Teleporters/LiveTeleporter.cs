@@ -82,7 +82,7 @@ namespace DOL.GS.Scripts
 									"Try your luck in [PvP] i will teleport you to the hub or\n" +
                                     "A [Battleground] appropriate to your season\n\n" +
                                     "Or one of the many [Towns] throughout Albion");
-                    if (player.Level < 15) // Add server rule check for tutorial
+                    if (player.Level < 0) // Add server rule check for tutorial
                     {
                         SayTo(player, "You are also eligible for passage to [Holtham] in Constantine's Sound.");
                     }
@@ -107,7 +107,7 @@ namespace DOL.GS.Scripts
 									"Try your luck in [PvP] i will teleport you to the hub or\n" +
                                     "A [Battleground] appropriate to your season\n\n" +
                                     "Or one of the many [Towns] throughout Midgard");
-                    if (player.Level < 15) // Add server rule check for tutorial
+                    if (player.Level < 0) // Add server rule check for tutorial
                     {
                         SayTo(player, "You are also eligible for passage to [Hafheim] in Grenlock's Sound.");
                     }
@@ -131,7 +131,7 @@ namespace DOL.GS.Scripts
 									"Try your luck in [PvP] i will teleport you to the hub or\n" +
                                     "A [Battleground] appropriate to your season\n\n" +
                                     "Or one of the many [Towns] throughout Hibernia");
-                    if (player.Level < 15) // Add server rule check for tutorial
+                    if (player.Level < 0) // Add server rule check for tutorial
                     {
                         SayTo(player, "You are also eligible for passage to [Fintain] in Lamfhota's Sound.");
                     }
@@ -303,24 +303,6 @@ namespace DOL.GS.Scripts
                         {
                         // Move to Molvik area 241
                         t.MoveTo(241, 576254, 544246, 5992, 1462);
-                        }
-						
-						if (t.Realm == eRealm.Albion && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
-						if (t.Realm == eRealm.Midgard && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
-						if (t.Realm == eRealm.Hibernia && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
                         }
 						
                         if (t.Level > 49)
@@ -619,24 +601,6 @@ namespace DOL.GS.Scripts
                         t.MoveTo(241, 576254, 544246, 5992, 1462);
                         }
 						
-						if (t.Realm == eRealm.Albion && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
-						if (t.Realm == eRealm.Midgard && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
-						if (t.Realm == eRealm.Hibernia && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
                         if (t.Level > 49)
                         {
                         // Tell them oops
@@ -925,25 +889,7 @@ namespace DOL.GS.Scripts
                         // Move to Molvik area 241
                         t.MoveTo(241, 576254, 544246, 5992, 1462);
                         }
-						
-						if (t.Realm == eRealm.Albion && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
-						if (t.Realm == eRealm.Midgard && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
-						if (t.Realm == eRealm.Hibernia && t.Level > 39 && t.Level < 50)
-                        {
-                        // Move to Thid area 238
-                        t.MoveTo(238, 576254, 544246, 5992, 1462);
-                        }
-						
+
                         if (t.Level > 49)
                         {
                         // Tell them oops
