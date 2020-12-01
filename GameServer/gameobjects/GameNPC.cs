@@ -2730,7 +2730,7 @@ namespace DOL.GS
             }
 
             return 0;
-        }
+        }        
 
         protected GameNPC m_teleporterIndicator = null;
 

@@ -329,6 +329,11 @@ namespace DOL.GS
         }
 
         /// <summary>
+        /// Stores players objectId for use with the player revive packet - needed when changing region as player objectId is removed when they zone which is before SendPlayerRevive packet is sent
+        /// </summary>         
+        public ushort OldObjectId = 0;
+
+        /// <summary>
         /// Gets or sets the no help flag for this player
         /// (delegate to property in DBCharacter)
         /// </summary>
@@ -5925,8 +5930,8 @@ namespace DOL.GS
                 Task.TasksDone = 0;
                 Task.SaveIntoDatabase();
             }
-			
-			// see if npc in area can now show us a quest icon
+
+            // see if npc in area can now show us a quest icon
             foreach (GameNPC npc in GetNPCsInRadius(WorldMgr.VISIBILITY_DISTANCE))
             {
                 if (npc.CanShowOneQuest(this))
@@ -10133,13 +10138,13 @@ break;
 
                                         if (requiredLevel <= Level)
                                         {
-											if (spell.CastTime > 0 && AttackState)
-											{
-												Out.SendMessage(LanguageMgr.GetTranslation(Client.Account.Language, "GamePlayer.UseSlot.CantUseInCombat"), eChatType.CT_System, eChatLoc.CL_SystemWindow);
-											}
+                                            if (spell.CastTime > 0 && AttackState)
+                                            {
+                                                Out.SendMessage(LanguageMgr.GetTranslation(Client.Account.Language, "GamePlayer.UseSlot.CantUseInCombat"), eChatType.CT_System, eChatLoc.CL_SystemWindow);
+                                            }
 
                                             // Eden
-                                            if ((IsStunned && !(Steed != null && Steed.Name == "Forceful Zephyr")) || IsMezzed || !IsAlive)
+                                            else if ((IsStunned && !(Steed != null && Steed.Name == "Forceful Zephyr")) || IsMezzed || !IsAlive)
                                             {
                                                 Out.SendMessage(LanguageMgr.GetTranslation(Client.Account.Language, "GamePlayer.UseSlot.CantUseState", useItem.GetName(0, false)), eChatType.CT_System, eChatLoc.CL_SystemWindow);
                                             }
@@ -11459,6 +11464,7 @@ break;
 
             if (regionID != CurrentRegionID)
             {
+                OldObjectId = (ushort)this.ObjectID;
                 GameEventMgr.Notify(GamePlayerEvent.RegionChanging, this);
                 if (!RemoveFromWorld())
                 {
