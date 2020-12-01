@@ -204,7 +204,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1467;
                         spell.Icon = 1467;
 						spell.TooltipId = 9013;
-                        spell.Value = 78;
+                        spell.Value = 45;
                         spell.Name = "Armor of the Realm";
                         spell.Description = "Adds to the recipient's Armor Factor (AF) resulting in better protection againts some forms of attack. It acts in addition to any armor the target is wearing.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -238,7 +238,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1467;
                         spell.Icon = 1467;
 						spell.TooltipId = 9014;
-                        spell.Value = 58;
+                        spell.Value = 35;
                         spell.Name = "Armor of the Realm";
                         spell.Description = "Adds to the recipient's Armor Factor (AF) resulting in better protection againts some forms of attack. It acts in addition to any armor the target is wearing.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -272,7 +272,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1457;
                         spell.Icon = 1457;
 						spell.TooltipId = 9015;
-                        spell.Value = 74;
+                        spell.Value = 30;
                         spell.Name = "Strength of the Realm";
                         spell.Description = "Increases target's Strength.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -306,7 +306,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1457;
                         spell.Icon = 1457;
 						spell.TooltipId = 9016;
-                        spell.Value = 55;
+                        spell.Value = 25;
                         spell.Name = "Strength of the Realm";
                         spell.Description = "Increases target's Strength.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -340,7 +340,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1486;
                         spell.Icon = 1486;
 						spell.TooltipId = 9017;
-                        spell.Value = 74;
+                        spell.Value = 30;
                         spell.Name = "Fortitude of the Realm";
                         spell.Description = "Increases target's Constitution.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -374,7 +374,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1486;
                         spell.Icon = 1486;
 						spell.TooltipId = 9018;
-                        spell.Value = 55;
+                        spell.Value = 30;
                         spell.Name = "Fortitude of the Realm";
                         spell.Description = "Increases target's Constitution.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -408,7 +408,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1476;
                         spell.Icon = 1476;
 						spell.TooltipId = 9019;
-                        spell.Value = 74;
+                        spell.Value = 30;
                         spell.Name = "Dexterity of the Realm";
                         spell.Description = "Increases Dexterity for a character.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -442,7 +442,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1476;
                         spell.Icon = 1476;
 						spell.TooltipId = 9020;
-                        spell.Value = 55;
+                        spell.Value = 25;
                         spell.Name = "Dexterity of the Realm";
                         spell.Description = "Increases Dexterity for a character.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -476,7 +476,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1517;
                         spell.Icon = 1517;
 						spell.TooltipId = 9021;
-                        spell.Value = 114;
+                        spell.Value = 40;
                         spell.Name = "Might of the Realm";
                         spell.Description = "Increases Str/Con for a character";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -510,7 +510,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1517;
                         spell.Icon = 1517;
 						spell.TooltipId = 9022;
-                        spell.Value = 85;
+                        spell.Value = 20;
                         spell.Name = "Might of the Realm";
                         spell.Description = "Increases Str/Con for a character";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -544,7 +544,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1526;
                         spell.Icon = 1526;
 						spell.TooltipId = 9023;
-                        spell.Value = 114;
+                        spell.Value = 40;
                         spell.Name = "Deftness of the Realm";
                         spell.Description = "Increases Dexterity and Quickness for a character.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -578,7 +578,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1526;
                         spell.Icon = 1526;
 						spell.TooltipId = 9024;
-                        spell.Value = 85;
+                        spell.Value = 20;
                         spell.Name = "Deftness of the Realm";
                         spell.Description = "Increases Dexterity and Quickness for a character.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -612,7 +612,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1538;
                         spell.Icon = 1538;
 						spell.TooltipId = 9025;
-                        spell.Value = 96;
+                        spell.Value = 30;
                         spell.Name = "Acuity of the Realm";
                         spell.Description = "Increases Acuity (casting attribute) for a character.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -646,7 +646,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1538;
                         spell.Icon = 1538;
 						spell.TooltipId = 9026;
-                        spell.Value = 72;
+                        spell.Value = 30;
                         spell.Name = "Acuity of the Realm";
                         spell.Description = "Increases Acuity (casting attribute) for a character.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -680,7 +680,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1506;
                         spell.Icon = 1506;
 						spell.TooltipId = 9027;
-                        spell.Value = 90;
+                        spell.Value = 45;
                         spell.Name = "Armor of the Realm";
                         spell.Description = "Adds to the recipient's Armor Factor (AF), resulting in better protection against some forms of attack. It acts in addition to any armor the target is wearing.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -714,7 +714,7 @@ namespace DOL.GS
                         spell.ClientEffect = 1506;
                         spell.Icon = 1506;
 						spell.TooltipId = 9028;
-                        spell.Value = 67;
+                        spell.Value = 45;
                         spell.Name = "Armor of the Realm";
                         spell.Description = "Adds to the recipient's Armor Factor (AF), resulting in better protection against some forms of attack. It acts in addition to any armor the target is wearing.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -748,7 +748,7 @@ namespace DOL.GS
                         spell.ClientEffect = 407;
                         spell.Icon = 407;
 						spell.TooltipId = 9029;
-                        spell.Value = 15;
+                        spell.Value = 8;
                         spell.Name = "Haste of the Realm";
                         spell.Description = "Increases the target's combat speed.";
                         spell.Range = WorldMgr.VISIBILITY_DISTANCE;
@@ -779,15 +779,15 @@ namespace DOL.GS
                     DBSpell spell = new DBSpell();
                     spell.AllowAdd = false;
                     spell.CastTime = 0;
+					spell.Concentration = 1;
                     spell.ClientEffect = 980;
                     spell.Icon = 980;
 					spell.TooltipId = 9008;
-                    spell.Duration = 65535;
-                    spell.Value = 30;
+                    spell.Value = 6;
                     spell.Name = "Power Regeneration Buff";
                     spell.Description = "Target regenerates power regeneration during the duration of the spell";
                     spell.Range = WorldMgr.VISIBILITY_DISTANCE;
-                    spell.SpellID = 2000008;
+                    spell.SpellID = 2000030;
                     spell.Target = "Realm";
                     spell.Type = "PowerRegenBuff";
 					spell.PackageID = "BuffBotSpells";
@@ -819,7 +819,7 @@ namespace DOL.GS
                     spell.Name = "Damage of the Realm";
                     spell.Description = "Target's melee attacks do additional damage.";
                     spell.Range = WorldMgr.VISIBILITY_DISTANCE;
-                    spell.SpellID = 88009;
+                    spell.SpellID = 2000031;
                     spell.Target = "Realm";
                     spell.Type = "DamageAdd";
                     m_dmgadd = new Spell(spell, 50);
@@ -849,7 +849,7 @@ namespace DOL.GS
                     spell.Name = "Health of the Realm";
                     spell.Description = "Target regenerates the given amount of health every tick";
                     spell.Range = WorldMgr.VISIBILITY_DISTANCE;
-                    spell.SpellID = 88011;
+                    spell.SpellID = 2000032;
                     spell.Target = "Realm";
                     spell.Type = "HealthRegenBuff";
                     m_hpRegen = new Spell(spell, 50);
@@ -877,7 +877,7 @@ namespace DOL.GS
                     spell.Name = "Blessed Health of the Realm";
                     spell.Description = "Heals the target.";
                     spell.Range = WorldMgr.VISIBILITY_DISTANCE;
-                    spell.SpellID = 88013;
+                    spell.SpellID = 2000033;
                     spell.Target = "Realm";
                     spell.Type = "Heal";
                     m_heal = new Spell(spell, 50);
